@@ -21,16 +21,6 @@ const upload = async (req, res) => {
     }
   } catch (err) {
     console.log(err);
-
-    if (err.code == "LIMIT_FILE_SIZE") {
-      return res.status(500).send({
-        message: "Não pode ser maior do que 2MB",
-      });
-    }
-
-    res.status(500).send({
-      message: `O upload desta imagem não pôde ser realizado: ${req.file.originalname}. ${err}`,
-    });
   }
 };
 
