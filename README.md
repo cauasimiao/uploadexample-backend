@@ -17,12 +17,17 @@ Devolvendo uma reposta em formato JSON com o base64 do arquivo enviado.
 #clonar repositório
 git clone https://github.com/cauasimiao/uploadexample-backend
 
+#entrar na pasta
+cd uploadexample-backend
+
 # instalar dependências
 npm install
 
 # executar o projeto
 npm run start
 ```
+
+- Utilizei o insomnia para teste da API.
 
 # Autor
 
