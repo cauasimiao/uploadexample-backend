@@ -1,7 +1,7 @@
 const uploadFile = require("../middleware/upload");
 const fs = require("fs");
 const baseUrl = "http://localhost:8080/files/";
-const base64_encode = require('../resources/base64_encode');
+const base64_encode = require('../encode/base64_encode');
 
 const upload = async (req, res) => {
   try {
