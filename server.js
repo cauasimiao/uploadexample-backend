@@ -10,6 +10,8 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 */
+app.listen(process.env.PORT || 8080);
+
 const initRoutes = require("./src/routes");
 
 app.use(express.urlencoded({ extended: true }));
