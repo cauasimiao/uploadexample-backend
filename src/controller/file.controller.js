@@ -11,7 +11,7 @@ const upload = async (req, res) => {
       return res.status(400).json({ message: "Insira uma imagem" });
     }
     const type = req.file.originalname.substr(req.file.originalname.lastIndexOf('.') +1);
-    if(type == 'jpg' || type == 'png') {
+    if(type == 'jpeg' || type == 'png' || type == 'jpg') {
       const encodedFile = base64_encode(req.file);
       res.status(200).json({
         base64file: encodedFile,
